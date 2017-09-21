@@ -85,8 +85,11 @@ class Tweet
     public function getFormatText()
     {
         $text = $this->getText();
-        $text = preg_replace('#http[s]://[a-z0-9._/-]+#i', '<a target="_blank" href="$0">$0</a>', $text);
-        $text = preg_replace('#@([a-z0-9_]+)#i', '@<a target="_blank" href="http://twitter.com/$1">$1</a>', $text);
+        $text = preg_replace('#http[s]://[a-z0-9._/-]+#i', '<a target="_blank" style="color:#0645AD;" href="$0">$0</a>',
+            $text);
+        $text = preg_replace('#@([a-z0-9_]+)#i',
+            '<a target="_blank" style="color:#0645AD;" href="http://twitter.com/$1">@$1</a>', $text);
+
         return $text;
     }
 
