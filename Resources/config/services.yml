@@ -1,0 +1,7 @@
+services:
+#    orweb_easy_last_tweet.example:
+#        class: Orweb\EasyLastTweetBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    orweb.twitter:
+        class: Orweb\EasyLastTweetBundle\Service\Twitter
+        arguments: [ '%consumer_key%','%consumer_secret%','%token%','%token_secret%' ]

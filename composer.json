@@ -1,0 +1,29 @@
+{
+  "name" : "orweb/easy-last-tweet",
+  "description" : "Symfony 2 bundle to add quickly last tweets on your website",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "Ribeiro Ophélie",
+    "email" : "ribeiro.ophe@gmail.com"
+  }],
+  "keywords" : [
+    "Symfony 2 tweets twitter last tweets"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+    "abraham/twitteroauth": "^0.5.3"
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Orweb\\EasyLastTweetBundle" : ""
+    }
+  },
+  "target-dir" : "Orweb/EasyLastTweetBundle",
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "v1.0.0-dev"
+    }
+  }
+}
