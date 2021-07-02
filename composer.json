@@ -13,7 +13,7 @@
     "MIT"
   ],
   "require" : {
-    "abraham/twitteroauth": "^0.5.3"
+    "abraham/twitteroauth": "^2.0.2"
   },
   "autoload" : {
     "psr-0" : {
